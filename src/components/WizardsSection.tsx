@@ -194,10 +194,22 @@ export default function WizardSection() {
   }
 
   return (
-    <section id="wizard" className="bg-neutral-900 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Progress Bar */}
-        <div className="mb-12">
+    <section id="wizard" className="bg-neutral-900">
+      <div className="max-w-7xl mx-auto lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="text-center space-y-8">
+          <h1 className="text-5xl md:text-7xl font-bold text-white">
+            Build Your Perfect{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
+              Web Stack
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+            Generate a custom web development starter kit in minutes. Choose your framework, database, and tools.
+          </p>
+        </div>
+      </div>
+        <div className="mb-12 ">
           <div className="flex justify-between mb-2">
             <span className="text-cyan-400">
               Step {step} of {TOTAL_STEPS}

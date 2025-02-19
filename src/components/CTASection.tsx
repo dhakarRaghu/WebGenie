@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -26,9 +27,12 @@ export default function CTASection() {
             <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-400/20 transition-all duration-300">
               Start Generating Now
             </button>
-            <button className="px-8 py-4 bg-neutral-900 text-gray-300 font-bold rounded-lg hover:bg-neutral-700 transition-all duration-300">
+            <Link href={'/docs'} >
+            <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-400/20 transition-all duration-300">
               View Documentation
             </button>
+            </Link>
+          
           </div>
         </div>
       </div>

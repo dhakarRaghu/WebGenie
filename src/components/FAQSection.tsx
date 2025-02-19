@@ -1,37 +1,6 @@
 // components/FAQSection.js
-"use client"
-import React, { useEffect } from 'react';
-
 const FAQSection = () => {
-  useEffect(() => {
-    const faqButtons = document.querySelectorAll('.faq-button');
-    faqButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const content = button.nextElementSibling as HTMLElement | null;
-        const icon = button.querySelector('svg');
-        if (content) {
-          content.classList.toggle('hidden');
-          if (icon) {
-            icon.style.transform = content.classList.contains('hidden')
-              ? 'rotate(0deg)'
-              : 'rotate(180deg)';
-          }
-        }
-        faqButtons.forEach((otherButton) => {
-          if (otherButton !== button) {
-            const otherContent = otherButton.nextElementSibling;
-            const otherIcon = otherButton.querySelector('svg');
-            if (otherContent) {
-              otherContent.classList.add('hidden');
-            }
-            if (otherIcon) {
-              otherIcon.style.transform = 'rotate(0deg)';
-            }
-          }
-        });
-      });
-    });
-  }, []);
+
 
   return (
     <section id="faq" className="bg-neutral-900 py-20">

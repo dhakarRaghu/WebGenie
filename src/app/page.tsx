@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderSection from "../components/HeaderSection";
-import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeatureSection";
 import WizardSection from "../components/WizardsSection";
 import TestimonialsSection from "../components/TestinomialSection";
@@ -12,9 +11,8 @@ export default function HomePage() {
   return (
     <main id="main-content" className="flex-1 relative h-full">
       <HeaderSection />
-      <HeroSection />
-      <FeaturesSection />
       <WizardSection />
+      <FeaturesSection />
       <TestimonialsSection />
       <FAQSection />
       <CTASection />

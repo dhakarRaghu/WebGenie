@@ -22,16 +22,19 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="#" className="text-gray-300 hover:text-cyan-400 transition-colors">
+          <Link href="/" className="text-gray-300 hover:text-cyan-400 transition-colors">
             Home
           </Link>
-          <Link href="#" className="text-gray-300 hover:text-cyan-400 transition-colors">
+          <Link href="/" className="text-gray-300 hover:text-cyan-400 transition-colors">
             Features
           </Link>
-          <Link href="#" className="text-gray-300 hover:text-cyan-400 transition-colors">
+          <Link href="/docs" className="text-gray-300 hover:text-cyan-400 transition-colors">
+            Docs
+          </Link>
+          <Link href="/" className="text-gray-300 hover:text-cyan-400 transition-colors">
             About
           </Link>
-          <Link href="#" className="text-gray-300 hover:text-cyan-400 transition-colors">
+          <Link href="/" className="text-gray-300 hover:text-cyan-400 transition-colors">
             Contact
           </Link>
         </div>

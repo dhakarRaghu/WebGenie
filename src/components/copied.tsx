@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const CopyButton = () => {
@@ -14,7 +15,7 @@ const CopyButton = () => {
   };
 
   return (
-    <div className="min-h-[70vh] bg-neutral-900 flex items-center">
+    <div id="header"  className="min-h-[70vh] bg-neutral-900 flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center animate__animated animate__fadeIn">
           {/* Title */}
@@ -25,7 +26,7 @@ const CopyButton = () => {
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Generate your perfect web development stack in seconds. Choose your frameworks, tools, and features with our intuitive wizard interface.
           </p>
- 
+          <div className="mt-16"></div>
           <div className="mt-8 bg-gray-800 text-white p-4 rounded-lg flex items-center justify-between max-w-xl mx-auto border border-gray-700">
             <code className="gap-4 text-cyan-300 font-mono text-sm sm:text-base truncate">
               npx @raghvendra_04/create-my-project 
@@ -37,9 +38,12 @@ const CopyButton = () => {
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
+          <Link href={'/docs'} >
           <button className=" mt-6 bg-cyan-400 hover:bg-cyan-500 text-neutral-900 font-bold py-3 px-8 rounded-lg transition-colors animate__animated animate__pulse animate__infinite">
-            Start Your Work
+            Learn More
           </button>
+          </Link>
+          
         </div>
       </div>
     </div>
