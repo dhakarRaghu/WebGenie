@@ -22,7 +22,6 @@ const HeaderSection = () => {
       <nav className="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center  gap-80 py-4">
-            {/* Logo */}
             <a href="/" className="text-cyan-400 font-bold text-2xl flex-shrink-0">
               WebGen
             </a>

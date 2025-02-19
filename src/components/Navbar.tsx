@@ -38,16 +38,6 @@ export function Navbar() {
             Contact
           </Link>
         </div>
-
-        {/* Theme Toggle */}
-        <button onClick={toggleTheme} className="p-2 text-gray-300 hover:text-cyan-400 transition-colors" aria-label="Toggle theme">
-          {darkMode ? "🌙" : "☀️"}
-        </button>
-
-        {/* Mobile menu button */}
-        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-gray-300 hover:text-cyan-400 focus:outline-none p-2" aria-label="Open menu">
-          ☰
-        </button>
       </div>
 
       {/* Mobile Menu */}

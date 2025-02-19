@@ -24,7 +24,7 @@ export default function CTASection() {
 
           {/* Buttons with Client Component for Click Handling */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-400/20 transition-all duration-300">
+            <button className="px-8 py-4 bg-gradient-to-r text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-400/20 transition-all duration-300">
               Start Generating Now
             </button>
             <Link href={'/docs'} >
