@@ -1,11 +1,15 @@
-import React from 'react'
 
-const page = () => {
+import React from 'react';
+import HeaderSection from "../components/HeaderSection";
+import HeroSection from "../components/HeroSection";
+
+
+export default function HomePage() {
   return (
-    <div>
-      heloo
-    </div>
-  )
+    <main id="main-content" className="flex-1 relative h-full">
+      <HeaderSection />
+      <HeroSection />
+    
+    </main>
+  );
 }
-
-export default page
