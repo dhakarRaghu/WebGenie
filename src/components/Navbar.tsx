@@ -37,6 +37,7 @@ export function Navbar() {
           <Link href="/" className="text-gray-300 hover:text-cyan-400 transition-colors">
             Contact
           </Link>
+          <div className="px-40"></div>
         </div>
       </div>
 

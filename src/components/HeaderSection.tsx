@@ -25,8 +25,6 @@ const HeaderSection = () => {
             <a href="/" className="text-cyan-400 font-bold text-2xl flex-shrink-0">
               WebGen
             </a>
-
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("header")}
