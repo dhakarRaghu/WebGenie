@@ -7,7 +7,7 @@ const CopyButton = () => {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("npx  @raghvendra_04/create-my-project")
+    navigator.clipboard.writeText("npx start-my-project")
       .then(() => {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
@@ -29,7 +29,7 @@ const CopyButton = () => {
           <div className="mt-16"></div>
           <div className="mt-8 bg-gray-800 text-white p-4 rounded-lg flex items-center justify-between max-w-xl mx-auto border border-gray-700">
             <code className="gap-4 text-cyan-300 font-mono text-sm sm:text-base truncate">
-              npx @raghvendra_04/create-my-project 
+              npx start-my-project
             </code>
             <button
               onClick={copyToClipboard}

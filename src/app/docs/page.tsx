@@ -55,7 +55,7 @@ web project using WebGenie. Gain insights on frameworks, ORMs, configuration, an
             <h2 className="text-2xl font-bold text-white">Quick Start</h2>
             <p className="text-gray-300">Create a new project:</p>
                 <pre className="bg-neutral-800 p-4 text-sm text-gray-200 rounded-md">
-                <p className="text-gray-300">npm i -g @raghvendra_04/create-my-project  create-my-project</p>
+                <p className="text-gray-300">npx start-my-project</p>
                 </pre>
             <pre className="bg-neutral-800 p-4 text-sm text-gray-200 rounded-md">
 {`cd Project_Name
